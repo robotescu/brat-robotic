@@ -29,7 +29,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.pause(500)
     // Invart
     wuKong.setMotorSpeed(wuKong.MotorList.M1, 50)
-    basic.pause(600)
+    basic.pause(500)
     wuKong.stopMotor(wuKong.MotorList.M1)
     basic.pause(500)
     // Cobor
@@ -48,4 +48,10 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.pause(2000)
     wuKong.stopMotor(wuKong.MotorList.M2)
 })
-basic.showIcon(IconNames.Surprised)
+basic.showLeds(`
+    . # # # .
+    . # . # .
+    . # . . .
+    . # . . .
+    # # # . .
+    `)
